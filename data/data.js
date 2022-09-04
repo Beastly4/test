@@ -23,6 +23,7 @@ export const sectionVideo = {
   ],
   videoCaption: "Video caption here",
   poster: "/videoPreview.png",
+  video: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/h264.mov",
 };
 
 export const sectionGroup = {

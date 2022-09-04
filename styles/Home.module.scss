@@ -113,13 +113,10 @@
     max-width: max-content;
     margin: 0 0 29px 0;
 
-    .hide {
-      display: none;
-    }
-
     .video {
-      max-width: 555px;
+      width: 555px;
       height: 300px;
+      background-color: #000;
     }
 
     .playButton {
@@ -144,6 +141,10 @@
       svg {
         overflow: visible;
       }
+    }
+
+    .hide {
+      display: none;
     }
   }
 
