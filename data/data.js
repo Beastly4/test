@@ -1,3 +1,5 @@
+import { performance } from "perf_hooks";
+
 export const sectionAboutUs = {
   title: "ABOUT US",
   imageFigure: "/aboutUsFigure.svg",
