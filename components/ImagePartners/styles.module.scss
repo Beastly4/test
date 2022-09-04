@@ -1,0 +1,14 @@
+@import "styles/colors";
+@import "styles/typography";
+
+.imageWrapper {
+  width: 193px;
+  height: 108px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: auto;
+  }
+}

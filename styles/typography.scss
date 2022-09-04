@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "FormaDJRBLack";
+  src: url("./fonts/FormaDJRDisplay-Black-Testing.otf") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GilroyMedium";
+  src: url("./fonts/Gilroy-Medium.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GilroyBold";
+  src: url("./fonts/Gilroy-Bold.ttf") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GilroyRegular";
+  src: url("./fonts/Gilroy-Regular.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+$mainFont: FormaDJRBLack;
+$secondaryFont: GilroyMedium;
+$secondaryFontBold: GilroyBold;
+$secondaryFontRegular: GilroyRegular;
+
+@mixin font(
+  $fontFamily,
+  $fontSize,
+  $lineHeight,
+  $fontWeight: normal,
+  $fontStyle: normal
+) {
+  font-family: $fontFamily;
+  font-style: $fontStyle;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}

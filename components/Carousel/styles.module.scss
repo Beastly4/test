@@ -1,0 +1,35 @@
+@import "styles/colors";
+@import "styles/typography";
+
+.swiperWrapper {
+  margin: 0 32px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -65px;
+    top: -50%;
+    background-image: linear-gradient(to right, #e9e9eb, transparent);
+    width: 152px;
+    height: 452px;
+    z-index: 9;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: -65px;
+    top: -50%;
+    background-image: linear-gradient(to right, transparent, #e9e9eb);
+    width: 152px;
+    height: 452px;
+    z-index: 9;
+  }
+
+  .carouselButton {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+  }
+}

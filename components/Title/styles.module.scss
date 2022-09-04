@@ -1,0 +1,8 @@
+@import "styles/colors";
+@import "styles/typography";
+
+.title {
+  @include font($mainFont, 82px, 66px);
+  text-transform: uppercase;
+  color: $darkBlue;
+}

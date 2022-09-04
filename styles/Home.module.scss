@@ -1,0 +1,292 @@
+@import "styles/colors";
+@import "styles/typography";
+
+.mainWrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container {
+  margin: 0 33px;
+}
+
+.aboutUs {
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+  .title {
+    max-width: 287px;
+    color: $orange;
+    padding: 144px 34px 307px 34px;
+  }
+
+  .imageFigure {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+  .imageGirl {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -2;
+  }
+}
+
+.wrapper {
+  padding: 616px 0 0 0;
+}
+
+.videoSection {
+  position: relative;
+  background-color: $gray;
+  padding: 0 0 117px 0;
+
+  .descriptionBlock {
+    margin: 0 33px;
+    padding: 87px 117px 104px 117px;
+    background-color: $white;
+    position: absolute;
+    top: -150px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9;
+
+    .blockTitle {
+      font-size: 52px;
+      line-height: 44px;
+      padding: 11px;
+    }
+
+    .blockDescription {
+      @include font($secondaryFont, 22px, 32px);
+      color: $blue;
+      max-width: 555px;
+    }
+  }
+
+  .title {
+    @include font($secondaryFontBold, 42px, 52px);
+    max-width: 1140px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 354px 0 117px 0;
+    text-transform: unset;
+  }
+
+  .videoSectionWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 117px;
+  }
+
+  .videoContainer {
+    .caption {
+      @include font($secondaryFontBold, 18px, 28px);
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: max-content;
+      height: 38px;
+      padding: 0 0 0 38px;
+      color: $blue;
+
+      &:before {
+        width: 2px;
+        height: 38px;
+        content: "";
+        top: 0;
+        left: 0;
+        background-color: $darkBlue;
+        position: absolute;
+      }
+    }
+  }
+
+  .videoWrapper {
+    position: relative;
+    max-width: max-content;
+    margin: 0 0 29px 0;
+
+    .hide {
+      display: none;
+    }
+
+    .video {
+      max-width: 555px;
+      height: 300px;
+    }
+
+    .playButton {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $orange;
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.4s;
+
+      &:hover {
+        width: 75px;
+        height: 75px;
+      }
+
+      svg {
+        overflow: visible;
+      }
+    }
+  }
+
+  .descriptionWrapper {
+    max-width: 438px;
+
+    .descriptionTitle {
+      font-size: 32px;
+      line-height: 45px;
+    }
+
+    .descriptions {
+      display: flex;
+      flex-direction: column;
+
+      .description {
+        margin: 20px 0 0 0;
+        @include font($secondaryFontRegular, 18px, 28px);
+        color: $blue;
+
+        &:first-of-type {
+          margin: 41px 0 0 0;
+        }
+      }
+    }
+  }
+}
+
+.group {
+  position: relative;
+  background-color: $white;
+
+  .figureWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    img {
+      max-width: 1149px;
+      max-height: 580px;
+      z-index: -1;
+    }
+  }
+
+  .groupWrapper {
+    display: flex;
+    padding: 81px 0 104px 0;
+  }
+
+  .imageCar {
+    max-width: 672px;
+    max-height: 375px;
+    z-index: 1;
+    margin-top: 21px;
+  }
+
+  .content {
+    margin: 0 0 0 147px;
+    z-index: 1;
+
+    .title {
+      color: $white;
+      font-size: 52px;
+      line-height: 63px;
+    }
+
+    .description {
+      @include font($secondaryFontRegular, 18px, 28px);
+      margin: 56px 0 88px 0;
+      color: $white;
+      min-height: 127px;
+      max-width: 422px;
+    }
+  }
+}
+
+.era {
+  background-color: $gray;
+  overflow: hidden;
+
+  .wrapper {
+    padding: 97px 33px 117px 33px;
+  }
+
+  .title {
+    margin: 0 0 90px 117px;
+    max-width: 689px;
+    height: 200px;
+    font-size: 100px;
+    line-height: 80px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.ourValues {
+  background-color: $white;
+  padding: 115px 0 83px 0;
+
+  .ourValuesWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.sectionMap {
+  background-color: $darkBlue;
+  padding: 121px 0 164px 0;
+
+  .mapWrapper {
+    padding: 0 150px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 52px;
+    line-height: 33px;
+    color: $white;
+  }
+
+  .blocksWrapper {
+    margin: 45px 0 77px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.partners {
+  background-color: $white;
+  padding: 129px 0 108px 0;
+
+  .parntersWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 53px 0 13px;
+  }
+
+  .title {
+    font-size: 22px;
+    line-height: 13px;
+    text-align: center;
+    margin: 0 0 24px 0;
+    color: $blue;
+  }
+}

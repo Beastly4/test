@@ -1,0 +1,25 @@
+@import "styles/colors";
+@import "styles/typography";
+
+.blocksWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 30px 30px;
+  grid-auto-flow: row;
+}
+
+.withSeparator {
+  position: relative;
+
+  &:after {
+    content: "";
+    top: -7px;
+    left: calc(100% + 46px);
+    height: 425px;
+    width: 2px;
+    background-color: $gray;
+    position: absolute;
+  }
+}

@@ -1,0 +1,39 @@
+@import "styles/colors";
+@import "styles/typography";
+
+.modalWrapper {
+  position: relative;
+}
+.modal {
+  width: 321px;
+  height: 160px;
+  background-color: $gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  padding: 30px;
+  opacity: 1;
+  transition: height 0.4s ease-out, opacity 0.4s ease-in-out;
+
+  .country {
+    @include font($secondaryFontBold, 16px, 32px);
+    margin: 0 0 3px 0;
+    color: $darkBlue;
+  }
+
+  .description {
+    @include font($secondaryFontRegular, 14px, 25px);
+    color: $darkBlue;
+  }
+}
+
+.overlay {
+  background-color: transparent;
+}
+
+.close {
+  opacity: 0;
+  height: 0;
+}

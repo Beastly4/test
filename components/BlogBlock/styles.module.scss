@@ -1,0 +1,26 @@
+@import "styles/colors";
+@import "styles/typography";
+
+.blockWrapper {
+  margin: 0 0 30px 0;
+  .image {
+    height: 350px;
+    width: 437px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 28px;
+    max-width: 318px;
+    margin: 45px 0 24px 0;
+    height: 67px;
+    color: $blue;
+  }
+
+  .description {
+    @include font($secondaryFont, 16px, 26px);
+    margin: 0 0 31px 0;
+    max-width: 437px;
+    color: $blue;
+  }
+}

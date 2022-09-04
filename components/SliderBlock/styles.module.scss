@@ -1,0 +1,26 @@
+@import "styles/colors";
+@import "styles/typography";
+
+.slideWrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 400px;
+    height: 4px;
+    background-color: $darkBlue;
+  }
+  .slideTitle {
+    font-size: 32px;
+    line-height: 45px;
+    padding: 44px 0 16px 0;
+  }
+
+  .description {
+    @include font($secondaryFontRegular, 18px, 28px);
+    width: 321px;
+    color: $blue;
+  }
+}

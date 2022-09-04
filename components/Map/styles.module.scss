@@ -1,0 +1,15 @@
+@import "styles/colors";
+@import "styles/typography";
+
+.circle {
+  cursor: pointer;
+  stroke: $orange;
+  stroke-width: 2;
+  fill: $white;
+  transition-duration: 0.4s;
+  z-index: 9999;
+
+  &:hover {
+    stroke-width: 4;
+  }
+}
