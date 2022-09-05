@@ -168,7 +168,7 @@ export default function Home({
               <div className={styles.groupWrapper}>
                 <img
                   src={`${
-                    process.env.NEXT_PUBLIC_NODE_ENV === "production"
+                    process.env.NEXT_PUBLIC_NODE_ENV !== "production"
                       ? process.env.NEXT_PUBLIC_PATH + sectionGroup?.imageCar
                       : process.env.sectionGroup?.imageCar
                   }`}
