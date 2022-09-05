@@ -81,7 +81,7 @@ export default function Home({
           <div className={styles.imageFigure}>
             <img
               src={`${
-                process.env.NEXT_PUBLIC_NODE_ENV === "production"
+                process.env.NEXT_PUBLIC_NODE_ENV !== "dev"
                   ? process.env.NEXT_PUBLIC_PATH + sectionAboutUs?.imageFigure
                   : sectionAboutUs?.imageFigure
               }`}
@@ -93,7 +93,7 @@ export default function Home({
           <div className={styles.imageGirl}>
             <img
               src={`${
-                process.env.NEXT_PUBLIC_NODE_ENV === "production"
+                process.env.NEXT_PUBLIC_NODE_ENV !== "dev"
                   ? process.env.NEXT_PUBLIC_PATH + sectionAboutUs?.imageGirl
                   : sectionAboutUs?.imageGirl
               }`}
@@ -168,9 +168,9 @@ export default function Home({
               <div className={styles.groupWrapper}>
                 <img
                   src={`${
-                    process.env.NEXT_PUBLIC_NODE_ENV !== "production"
+                    process.env.NEXT_PUBLIC_NODE_ENV !== "dev"
                       ? process.env.NEXT_PUBLIC_PATH + sectionGroup?.imageCar
-                      : process.env.sectionGroup?.imageCar
+                      : sectionGroup?.imageCar
                   }`}
                   alt="Car"
                   className={styles.imageCar}

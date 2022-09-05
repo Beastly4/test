@@ -5,7 +5,7 @@ const LocationBlock = ({ icon, title }) => {
     <div className={styles.block}>
       <img
         src={`${
-          process.env.NEXT_PUBLIC_NODE_ENV === "production"
+          process.env.NEXT_PUBLIC_NODE_ENV !== "dev"
             ? process.env.NEXT_PUBLIC_PATH + icon
             : icon
         }`}

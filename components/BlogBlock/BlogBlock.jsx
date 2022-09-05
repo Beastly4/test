@@ -8,7 +8,7 @@ const BlogBlock = ({ item, onClick }) => {
     <div className={styles.blockWrapper}>
       <img
         src={`${
-          process.env.NEXT_PUBLIC_NODE_ENV === "production"
+          process.env.NEXT_PUBLIC_NODE_ENV !== "dev"
             ? process.env.NEXT_PUBLIC_PATH + item?.image
             : item?.image
         }`}
