@@ -80,7 +80,11 @@ export default function Home({
         <div className={styles.mainWrapper}>
           <div className={styles.imageFigure}>
             <img
-              src={sectionAboutUs?.imageFigure}
+              src={`${
+                process.env.NEXT_PUBLIC_NODE_ENV === "production"
+                  ? process.env.NEXT_PUBLIC_PATH + sectionAboutUs?.imageFigure
+                  : sectionAboutUs?.imageFigure
+              }`}
               alt="Figure"
               width={1056}
               height={615}
@@ -88,7 +92,11 @@ export default function Home({
           </div>
           <div className={styles.imageGirl}>
             <img
-              src={sectionAboutUs?.imageGirl}
+              src={`${
+                process.env.NEXT_PUBLIC_NODE_ENV === "production"
+                  ? process.env.NEXT_PUBLIC_PATH + sectionAboutUs?.imageGirl
+                  : sectionAboutUs?.imageGirl
+              }`}
               alt="Girl"
               width={969}
               height={600}
@@ -159,7 +167,11 @@ export default function Home({
             <div className={styles.container}>
               <div className={styles.groupWrapper}>
                 <img
-                  src={sectionGroup?.imageCar}
+                  src={`${
+                    process.env.NEXT_PUBLIC_NODE_ENV === "production"
+                      ? process.env.NEXT_PUBLIC_PATH + sectionGroup?.imageCar
+                      : process.env.sectionGroup?.imageCar
+                  }`}
                   alt="Car"
                   className={styles.imageCar}
                 />

@@ -3,7 +3,14 @@ import styles from "./styles.module.scss";
 const ImagePartners = ({ image }) => {
   return (
     <div className={styles.imageWrapper}>
-      <img src={image} alt="Image" />
+      <img
+        src={`${
+          process.env.NEXT_PUBLIC_NODE_ENV === "production"
+            ? process.env.NEXT_PUBLIC_PATH + image
+            : image
+        }`}
+        alt="Image"
+      />
     </div>
   );
 };
